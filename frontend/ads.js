@@ -1,12 +1,16 @@
-async function showRewardedAd(){
+async function showRewardedAd() {
 
 alert("Calling Monetag");
 
-try{
+setTimeout(() => {
+alert("Still waiting...");
+}, 5000);
+
+try {
 
 let result = await show_11176239();
 
-alert("Returned : " + JSON.stringify(result));
+alert("Ad Finished");
 
 return result;
 
@@ -14,9 +18,9 @@ return result;
 
 catch(e){
 
-alert("Error : " + JSON.stringify(e));
+alert("Error");
 
-throw e;
+alert(JSON.stringify(e));
 
 }
 
