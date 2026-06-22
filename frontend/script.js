@@ -1,19 +1,25 @@
-async function watchAd(){
+let balance = 0;
+let adsToday = 0;
 
-try{
+async function watchAd() {
 
-alert("Calling Popup");
+    try {
 
-await showRewardedAd();
+        await showRewardedAd();
 
-alert("Popup Opened");
+        adsToday++;
 
-}
+        document.getElementById("ads").innerText = adsToday;
 
-catch(e){
+        document.getElementById("balance").innerText =
+        balance.toFixed(2);
 
-alert("Popup Failed");
+    }
 
-}
+    catch (e) {
+
+        // কিছুই দেখাবে না
+
+    }
 
 }
