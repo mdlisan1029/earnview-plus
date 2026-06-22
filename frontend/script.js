@@ -1,4 +1,8 @@
-alert(window.Telegram?.WebApp?.initDataUnsafe?.user?.id);
+Telegram.WebApp.ready();
+
+alert(Telegram.WebApp.platform);
+
+alert(JSON.stringify(Telegram.WebApp.initDataUnsafe));
 
 let balance = 0;
 let adsToday = 0;
