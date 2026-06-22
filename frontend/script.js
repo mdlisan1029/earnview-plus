@@ -1,27 +1,16 @@
-Telegram.WebApp.ready();
-
-alert(Telegram.WebApp.platform);
-
-alert(JSON.stringify(Telegram.WebApp.initDataUnsafe));
-
-let balance = 0;
-let adsToday = 0;
-
 async function watchAd(){
-
-alert("Button clicked");
 
 try{
 
 await showRewardedAd();
 
-alert("SDK finished");
+alert("Popup triggered");
 
 }
 
-catch(e){
+catch{
 
-alert("Error : " + JSON.stringify(e));
+alert("Popup failed");
 
 }
 
