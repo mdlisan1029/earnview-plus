@@ -1,5 +1,9 @@
-function showRewardedAd() {
+function showRewardedAd(){
 
-    return show_11176239();
+return show_11176239().then(()=>{
+
+console.log("Ad watched");
+
+});
 
 }
