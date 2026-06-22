@@ -1,7 +1,23 @@
-function showRewardedAd(){
+async function showRewardedAd(){
 
-alert(typeof show_11176239);
+alert("Calling Monetag");
 
-return show_11176239();
+try{
+
+let result = await show_11176239();
+
+alert("Returned : " + JSON.stringify(result));
+
+return result;
+
+}
+
+catch(e){
+
+alert("Error : " + JSON.stringify(e));
+
+throw e;
+
+}
 
 }
