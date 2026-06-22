@@ -2,15 +2,17 @@ async function watchAd(){
 
 try{
 
+alert("Calling Popup");
+
 await showRewardedAd();
 
-alert("Popup triggered");
+alert("Popup Opened");
 
 }
 
-catch{
+catch(e){
 
-alert("Popup failed");
+alert("Popup Failed");
 
 }
 
