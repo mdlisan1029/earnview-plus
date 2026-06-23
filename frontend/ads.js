@@ -1,7 +1,21 @@
+const AdController = window.Adsgram.init({
+    blockId: "36003"
+});
+
 async function showRewardedAd() {
+
     try {
-        await show_11176239('pop');
-    } catch(e) {
-        console.log(e);
+
+        const result = await AdController.show();
+
+        return result;
+
     }
+
+    catch(error){
+
+        return null;
+
+    }
+
 }
