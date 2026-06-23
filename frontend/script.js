@@ -1,16 +1,14 @@
-async function showRewardedAd(){
+async function watchAd() {
 
     alert("Popup Zone = 11176239");
 
-    try{
+    try {
 
         await show_11176239('pop');
 
         alert("Ad completed");
 
-    }
-
-    catch(e){
+    } catch (e) {
 
         alert("Ad failed");
 
