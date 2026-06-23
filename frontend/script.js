@@ -1,10 +1,18 @@
+let adsToday = 0;
+
 async function watchAd(){
 
-    const result = await showRewardedAd();
+    try{
 
-    if(result && result.done){
+        await showRewardedAd();
 
-        alert("Reward granted");
+        adsToday++;
+
+        document.getElementById("ads").innerText = adsToday;
+
+    }
+
+    catch(e){
 
     }
 
