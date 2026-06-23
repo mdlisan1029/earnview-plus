@@ -1,10 +1,10 @@
 async function watchAd() {
 
-    alert("Popup Zone = 11176240");
+    alert("Popup Zone = 11176239");
 
     try {
 
-        await show_11176240('pop');
+        await show_11176239 ('pop');
 
         alert("Ad completed");
 
