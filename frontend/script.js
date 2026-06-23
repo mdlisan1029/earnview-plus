@@ -1,27 +1,19 @@
-let balance = 0;
-let adsToday = 0;
+async function showRewardedAd(){
 
+    alert("Popup Zone = 11176239");
 
-async function watchAd(){
+    try{
 
-try{
+        await show_11176239('pop');
 
-await showRewardedAd();
+        alert("Ad completed");
 
-adsToday++;
+    }
 
-document.getElementById("ads").innerText = adsToday;
+    catch(e){
 
-}
+        alert("Ad failed");
 
-catch(e){
-
-console.log(e);
+    }
 
 }
-
-}
-
-
-document.getElementById("balance").innerText =
-balance.toFixed(2);
