@@ -1,5 +1,7 @@
 async function showRewardedAd(){
 
-return show_11176239('pop');
+alert("Interstitial requested");
+
+return show_11176239();
 
 }
