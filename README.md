@@ -1,1 +1,0 @@
-# earnview-plus
